@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:context=".Signup">
+
+        <!--fname-->
+        <TextView
+            android:id="@+id/fname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="First name"
+            android:textColor="@color/traffic_red"
+            android:textSize="20sp"
+            app:fontFamily="sans-serif-light" />
+
+        <EditText
+            android:id="@+id/fname_txt"
+            android:layout_width="94dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fname"
+            android:gravity="center"
+            android:maxLength="25"
+            android:textColor="@color/traffic_red"
+            android:textSize="20sp"
+            app:fontFamily="sans-serif-light" />
+        <!--sname-->
+        <TextView
+            android:id="@+id/sname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Surname"
+            android:textColor="@android:color/holo_blue_bright"
+            android:textSize="20sp"
+            app:fontFamily="sans-serif-light" />
+
+        <EditText
+            android:id="@+id/sname_txt"
+            android:layout_width="81dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sname"
+            android:gravity="center"
+            android:maxLength="25"
+            android:textColor="@android:color/holo_blue_bright"
+            android:textSize="20sp"
+            app:fontFamily="sans-serif-light" />
+
+        <!--email-->
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Email"
+            android:textColor="@color/traffic_red"
+            android:textSize="20sp"
+            app:fontFamily="sans-serif-light" />
+
+        <EditText
+            android:id="@+id/email_txt"
+            android:layout_width="117dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:maxLength="25"
+            android:textColor="@color/traffic_red"
+            android:textSize="20sp"
+            app:fontFamily="sans-serif-light" />
+        <!--DOB-->
+        <DatePicker
+            android:id="@+id/dob"
+            android:layout_width="wrap_content"
+            android:layout_height="420dp"
+            android:layout_marginTop="20dp" />
+        <!--height-->
+        <TextView
+            android:id="@+id/height"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Height"
+            android:layout_marginTop="30dp"
+            android:textColor="@android:color/holo_blue_bright"
+            android:textSize="20sp"
+            app:fontFamily="sans-serif-light" />
+
+        <EditText
+            android:id="@+id/height_txt"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:maxLength="25"
+            android:textColor="@android:color/holo_blue_bright"
+            android:textSize="20sp"
+            app:fontFamily="sans-serif-light" />
+        <!--weight-->
+        <TextView
+            android:id="@+id/weight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Weight"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/traffic_red"
+            android:textSize="20sp"
+            app:fontFamily="sans-serif-light" />
+
+        <EditText
+            android:id="@+id/weight_txt"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:maxLength="25"
+            android:textColor="@color/traffic_red"
+            android:textSize="20sp"
+            app:fontFamily="sans-serif-light" />
+        <!--gender-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gender"
+            android:layout_marginTop="30dp"
+            android:textColor="@android:color/holo_blue_bright"
+            android:textSize="20sp"
+            app:fontFamily="sans-serif-light"/>
+        <RadioGroup
+            android:id="@+id/radioGroupGender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/radioMale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="m"
+                android:textColor="@android:color/holo_blue_bright"
+                android:textSize="20sp"
+                app:fontFamily="sans-serif-light" />
+            <RadioButton
+                android:id="@+id/radioFemale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="f"
+                android:textColor="@android:color/holo_blue_bright"
+                android:textSize="20sp"
+                app:fontFamily="sans-serif-light" />
+        </RadioGroup>
+        <!--address-->
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Address"
+            android:layout_marginTop="30dp"
+            android:textSize="20sp"
+            app:fontFamily="sans-serif-light"
+            android:textColor="@color/traffic_red"/>
+
+        <EditText
+            android:id="@+id/address_txt"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:maxLength="25"
+            android:gravity="center"
+            android:textSize="20sp"
+            app:fontFamily="sans-serif-light"
+            android:textColor="@color/traffic_red"/>
+        <!--postcode-->
+        <TextView
+            android:id="@+id/postcode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Postcode"
+            android:layout_marginTop="30dp"
+            android:textSize="20sp"
+            app:fontFamily="sans-serif-light"
+            android:textColor="@android:color/holo_blue_bright"/>
+
+        <EditText
+            android:id="@+id/postcode_txt"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:maxLength="25"
+            android:gravity="center"
+            android:textSize="20sp"
+            app:fontFamily="sans-serif-light"
+            android:textColor="@android:color/holo_blue_bright"/>
+        <!--actlevel-->
+        <TextView
+            android:id="@+id/actlevel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Activity level"
+            android:layout_marginTop="30dp"
+            android:textSize="20sp"
+            app:fontFamily="sans-serif-light"
+            android:textColor="@color/traffic_red"/>
+
+        <Spinner
+            android:id="@+id/actSpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/actlevel"
+            app:fontFamily="sans-serif-light"
+            android:textColor="@color/traffic_red"/>
+        <!--stepPerMile-->
+        <TextView
+            android:id="@+id/stepPerMile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Step per mile"
+            android:textSize="20sp"
+            app:fontFamily="sans-serif-light"
+            android:textColor="@android:color/holo_blue_bright"/>
+
+        <EditText
+            android:id="@+id/stepPerMile_txt"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:maxLength="25"
+            android:gravity="center"
+            android:textSize="20sp"
+            app:fontFamily="sans-serif-light"
+            android:textColor="@android:color/holo_blue_bright"/>
+        <!--username-->
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Username"
+            android:layout_marginTop="30dp"
+            android:textSize="20sp"
+            app:fontFamily="sans-serif-light"
+            android:textColor="@color/traffic_red"/>
+
+        <EditText
+            android:id="@+id/username_txt"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:maxLength="25"
+            android:gravity="center"
+            android:textSize="20sp"
+            app:fontFamily="sans-serif-light"
+            android:textColor="@color/traffic_red"/>
+        <!--password-->
+        <TextView
+            android:id="@+id/psword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:layout_marginTop="30dp"
+            android:textSize="20sp"
+            app:fontFamily="sans-serif-light"
+            android:textColor="@android:color/holo_blue_bright"/>
+
+        <EditText
+            android:id="@+id/psword_txt"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:maxLength="25"
+            android:gravity="center"
+            android:textSize="20sp"
+            app:fontFamily="sans-serif-light"
+            android:textColor="@android:color/holo_blue_bright"/>
+        <!--注册按钮-->
+        <Button
+            android:id="@+id/regBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="register"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_marginTop="15dp"
+            android:textSize="20sp"
+            app:fontFamily="sans-serif-light"
+            android:textColor="@android:color/holo_orange_dark"
+            android:layout_marginBottom="15dp"/>
+    </LinearLayout>
+</ScrollView>
